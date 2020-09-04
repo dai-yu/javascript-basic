@@ -4,7 +4,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expectedName = undefined;
+    const expectedName = 'Bob';
     // --end->
 
     expect(person.name).toEqual(expectedName);
@@ -17,7 +17,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = {};
+    const expected = undefined;
     // --end->
 
     expect(person.whatTheHellIsThat).toEqual(expected);
@@ -28,20 +28,20 @@ describe('for object', () => {
 
     // <--start
     // Please write a line of code to remove the `name` property.
-
+    delete person.name;
     // --end->
 
     expect(person.name).toBeUndefined();
   });
 
-  it('should be able to find all the keys', () => {
+  fit('should be able to find all the keys', () => {
     const person = {
       name: 'Bob', yearOfBirth: 2019,
     };
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = ['name', 'yearOfBirth'];
     // --end->
 
     expect(Object.keys(person)).toEqual(expected);

@@ -6,8 +6,8 @@ describe('for strings', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expectedCharWithinRange = {};
-    const expectedCharOutOfRange = {};
+    const expectedCharWithinRange = 'e';
+    const expectedCharOutOfRange = undefined;
     // --end->
 
     expect(characterWithinRange).toEqual(expectedCharWithinRange);
@@ -20,7 +20,7 @@ describe('for strings', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'Hello World';
     // --end->
 
     expect(template).toEqual(expected);
@@ -31,7 +31,8 @@ describe('for strings', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'nut';
+    console.log(string.slice(4, 7));
     // --end->
 
     expect(string.slice(4, 7)).toEqual(expected);
@@ -42,7 +43,8 @@ describe('for strings', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 5;
+    console.log(string.indexOf('ut'));
     // --end->
 
     expect(string.indexOf('ut')).toEqual(expected);
@@ -53,7 +55,8 @@ describe('for strings', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'coconuts';
+    console.log(string.trim());
     // --end->
 
     expect(string.trim()).toEqual(expected);
@@ -65,7 +68,8 @@ describe('for strings', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = ['what', 'a', 'beautiful', '', '', '', 'day'];
+    console.log(splitted);
     // --end->
 
     expect(splitted).toEqual(expected);
@@ -76,7 +80,8 @@ describe('for strings', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'what->a->beautiful->day';
+    console.log(splitted.join('->'));
     // --end->
 
     expect(splitted.join('->')).toEqual(expected);
@@ -84,10 +89,13 @@ describe('for strings', () => {
 
   it('should be aware to the codepoint larger than 16-bit', () => {
     const emoji = '🐴👟';
+    const ak='a';
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 4;
+    console.log(emoji.length);
+    console.log(ak.length);
     // --end->
 
     expect(emoji.length).toEqual(expected);

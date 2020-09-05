@@ -89,13 +89,10 @@ describe('for strings', () => {
 
   it('should be aware to the codepoint larger than 16-bit', () => {
     const emoji = '🐴👟';
-    const ak='a';
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
     const expected = 4;
-    console.log(emoji.length);
-    console.log(ak.length);
     // --end->
 
     expect(emoji.length).toEqual(expected);
